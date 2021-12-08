@@ -103,16 +103,16 @@ class F04(Tk):
 
         # ...........< B U T T O N S >........................
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B05] : Retour au menu (Retour F01)
-        self.RetourMenu = Button(self, text="Rejouer",
+        self.RetourMenu = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Rejouer",
                                  command=self.commandeOuvreF02)  # Creation du bouton et de ce qu'il fait
         self.RetourMenu.place(x=250, y=600)  # On place ce bouton
 
         # ELEMENT GRAPHIQUE : <Button> = [B09] : Un bouton pour retourner au menu.
-        self.quitButton = Button(self, text="Retourner au Menu",
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Retourner au Menu",
                                  command=self.commandeOuvreF01)  # Création d'un bouton et de ce qu'il fait
         self.quitButton.place(x=350, y=600)  # Placement du bouton dans la fenêtre
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : Un bouton pour quitter l'application
-        self.quitButton = Button(self, text="Quitter", command=self.destroy)  # Création d'un bouton et de sa fonction
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)  # Création d'un bouton et de sa fonction
         self.quitButton.place(x=550, y=600)  # Placement du bouton
 
     # ==================================================

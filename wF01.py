@@ -168,7 +168,7 @@ class F01(Tk):  # declaration de l'objet F01
         self.BoutonValidNom.place(x=self.leftPadding, y=self.paddingtop + 150)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B03] : Ouverture de F03, fenêtre d'information.
-        BoutConfCom = Button(self, text="Informations Jeu", command=self.commandeOuvreF03)
+        BoutConfCom = Button(self, text="Informations Jeu", bg="RoyalBlue1", fg="white", font=("Arial", 15), command=self.commandeOuvreF03)
         BoutConfCom.place(x=self.leftPadding + 400, y=self.paddingtop + 600)
 
         print("ID =", self.IdJoueur)  # Pour control.
@@ -178,7 +178,7 @@ class F01(Tk):  # declaration de l'objet F01
             self.DeverouilCommands()
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : bouton pour quitter l'application
-        self.quitButton = Button(self, text="Quitter", command=self.destroy)
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
         self.quitButton.place(x=self.leftPadding + 300, y=self.paddingtop + 600)
 
         # ...........< L I S T B O X ' S > .......................
