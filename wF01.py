@@ -178,8 +178,9 @@ class F01(Tk):  # declaration de l'objet F01
             self.DeverouilCommands()
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : bouton pour quitter l'application
-        self.quitButton = Button(self, text="Quitter", command=self.destroy)
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
         self.quitButton.place(x=self.leftPadding + 300, y=self.paddingtop + 600)
+
 
         # ...........< L I S T B O X ' S > .......................
         # ELEMENT GRAPHIQUE : <Label> = [Libellé L01] : Liste des ID des joueurs de la base de données
@@ -212,16 +213,18 @@ class F01(Tk):  # declaration de l'objet F01
     # FONCTION OUTIL pour déverouiller les commandes si joueur enregistré (id != 0 ou nom entré)
     def DeverouilCommands(self):
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B05] :bouton pour lancer le jeu et ouvrir F02
-        self.ouvreF02 = Button(self, text="jouer", command=self.commandeOuvreF02)
+        self.ouvreF02 = Button(self, text="jouer", bg="Royalblue3", fg="white", font=("Arial", 15)", command=self.commandeOuvreF02)
         self.ouvreF02.place(x=self.leftPadding, y=self.paddingtop + 600)
+
 
         # ELEMENT GRAPHIQUE : <Entry> = [E02]: pour saisir l'angle
         self.entreAngle = Entry(self, font=("Arial", 18))
         self.entreAngle.place(x=self.leftPadding, y=self.paddingtop + 250, width=100)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B04] : "Appliquer (Enregistrer) l'angle"
-        self.AppliqAngle = Button(self, text="Appliquer l'angle", command=self.EnregistrAngle)
+        self.AppliqAngle = Button(self, text="Appliquer l'angle", bg="Royalblue3", fg="white", font=("Arial", 15), command=self.EnregistrAngle)
         self.AppliqAngle.place(x=self.leftPadding + 300, y=self.paddingtop + 250)
+
 
         # =====================
         # FONCTION Récupération Angle et enregistrement dans score.txt pour application
