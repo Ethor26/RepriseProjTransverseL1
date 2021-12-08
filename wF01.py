@@ -212,15 +212,15 @@ class F01(Tk):  # declaration de l'objet F01
     # FONCTION OUTIL pour déverouiller les commandes si joueur enregistré (id != 0 ou nom entré)
     def DeverouilCommands(self):
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B05] :bouton pour lancer le jeu et ouvrir F02
-        self.ouvreF02 = Button(self, text="jouer", command=self.commandeOuvreF02)
+        self.ouvreF02 = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="jouer", command=self.commandeOuvreF02)
         self.ouvreF02.place(x=self.leftPadding, y=self.paddingtop + 600)
 
         # ELEMENT GRAPHIQUE : <Entry> = [E02]: pour saisir l'angle
-        self.entreAngle = Entry(self, font=("Arial", 18))
+        self.entreAngle = Entry(self,bg="Royalblue3", fg="white", font=("Arial", 18))
         self.entreAngle.place(x=self.leftPadding, y=self.paddingtop + 250, width=100)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B04] : "Appliquer (Enregistrer) l'angle"
-        self.AppliqAngle = Button(self, text="Appliquer l'angle", command=self.EnregistrAngle)
+        self.AppliqAngle = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Appliquer l'angle", command=self.EnregistrAngle)
         self.AppliqAngle.place(x=self.leftPadding + 300, y=self.paddingtop + 250)
 
         # =====================
