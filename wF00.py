@@ -99,13 +99,14 @@ class F00(Tk):  # Declaration de l'objet F00
 
         # ...........< B U T T O N S >........................
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B01] : ouvrir menu (F01)
-        self.ouvreF01 = Button(self, text="Start", command=self.commandeOuvreF01)  # Creation d'un bouton sur tkinter:
+        self.ouvreF01 = Button(self, text="Start", bg="Royalblue3", fg="white", font=("Arial", 15),
+                               command=self.commandeOuvreF01)  # Creation d'un bouton sur tkinter:
         # la fenêtre du bouton est l'objet représenté par self, le texte dans le bouton est "start" et le clic active la
         # fonction définie dans "command", ici self.commandeOuvreF01 (SANS PARAMETRES).
         self.ouvreF01.place(x=200, y=650)  # Place le bouton aux coordonnées x et y définies.
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : Un bouton pour quitter l'application
-        self.quitButton = Button(self, text="Quitter", command=self.destroy)
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
         self.quitButton.place(x=300, y=650)
 
     # **************************************
