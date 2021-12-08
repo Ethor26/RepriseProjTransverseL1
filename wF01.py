@@ -168,7 +168,7 @@ class F01(Tk):  # declaration de l'objet F01
         self.BoutonValidNom.place(x=self.leftPadding, y=self.paddingtop + 150)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B03] : Ouverture de F03, fenêtre d'information.
-        BoutConfCom = Button(self, text="Informations Jeu", command=self.commandeOuvreF03)
+        BoutConfCom = Button(self, text="Informations Jeu", bg="RoyalBlue1", fg="white", font=("Arial", 15), command=self.commandeOuvreF03)
         BoutConfCom.place(x=self.leftPadding + 400, y=self.paddingtop + 600)
 
         print("ID =", self.IdJoueur)  # Pour control.
@@ -213,16 +213,24 @@ class F01(Tk):  # declaration de l'objet F01
     # FONCTION OUTIL pour déverouiller les commandes si joueur enregistré (id != 0 ou nom entré)
     def DeverouilCommands(self):
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B05] :bouton pour lancer le jeu et ouvrir F02
+<<<<<<< HEAD
         self.ouvreF02 = Button(self, text="jouer", bg="Royalblue3", fg="white", font=("Arial", 15)", command=self.commandeOuvreF02)
+=======
+        self.ouvreF02 = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="jouer", command=self.commandeOuvreF02)
+>>>>>>> c75964bad89abec77f817725d7249e763808de6b
         self.ouvreF02.place(x=self.leftPadding, y=self.paddingtop + 600)
 
 
         # ELEMENT GRAPHIQUE : <Entry> = [E02]: pour saisir l'angle
-        self.entreAngle = Entry(self, font=("Arial", 18))
+        self.entreAngle = Entry(self,bg="Royalblue3", fg="white", font=("Arial", 18))
         self.entreAngle.place(x=self.leftPadding, y=self.paddingtop + 250, width=100)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B04] : "Appliquer (Enregistrer) l'angle"
+<<<<<<< HEAD
         self.AppliqAngle = Button(self, text="Appliquer l'angle", bg="Royalblue3", fg="white", font=("Arial", 15), command=self.EnregistrAngle)
+=======
+        self.AppliqAngle = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Appliquer l'angle", command=self.EnregistrAngle)
+>>>>>>> c75964bad89abec77f817725d7249e763808de6b
         self.AppliqAngle.place(x=self.leftPadding + 300, y=self.paddingtop + 250)
 
 

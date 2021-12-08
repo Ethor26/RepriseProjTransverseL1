@@ -512,24 +512,24 @@ class F02(Tk):
 
         # ...........< B U T T O N S >........................
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B09] : Retour au menu (Retour F01)
-        self.B07_retourMenu = Button(self, text="Retour Menu", command=self.commandeOuvreF01)
+        self.B07_retourMenu = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Retour Menu", command=self.commandeOuvreF01)
         self.B07_retourMenu.place(x=190, y=700)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : Un bouton pour quitter l'application
-        self.quitButton = Button(self, text="Quitter", command=self.destroy)
+        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
         self.quitButton.place(x=300, y=700)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B08] : Un bouton pour mettre le jeu en pause.
-        self.PauseButton = Button(self, text="Pause", command=self.Pause)
+        self.PauseButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Pause", command=self.Pause)
         self.PauseButton.place(x=500, y=700)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B10] : Fin de la partie et ouvre F04, activable si bouton Pause pressé
         # avant. Modalités d'activation : voir fonction self.Pause().
-        self.B0_FinPartie = Button(self, text="Fin de partie", command=self.Fin_Partie, state=DISABLED)
+        self.B0_FinPartie = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Fin de partie", command=self.Fin_Partie, state=DISABLED)
         self.B0_FinPartie.place(x=400, y=700)
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B07] : Redémarre les obstacles et les commandes
-        self.BoutonReprise = Button(self, text="Reprendre", command=self.Reprendre, state=DISABLED)
+        self.BoutonReprise = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Reprendre", command=self.Reprendre, state=DISABLED)
         self.BoutonReprise.place(x=550, y=700)  # Le clic de "Pause" crée le bouton reprendre
 
         # *********************** Appel des fonctions
