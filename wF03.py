@@ -94,11 +94,11 @@ class F03(Tk):
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B09] : Retour au menu (Retour F01)
         self.RetourMenu = Button(self, bg="Royalblue1", fg="white", font=("Arial", 15), text="Retourner au menu", command=self.commandeOuvreF01)
-        self.RetourMenu.place(x=180, y=670)  # .place sert à placer le label
+        self.RetourMenu.place(x=180, y=640)  # .place sert à placer le label
 
         # ELEMENT GRAPHIQUE : <Button> = [Bouton B06] : Un bouton pour quitter l'application
-        self.quitButton = Button(self, bg="Royalblue3", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
-        self.quitButton.place(x=330, y=670)  # .place sert à placer le label
+        self.quitButton = Button(self, bg="Royalblue1", fg="white", font=("Arial", 15), text="Quitter", command=self.destroy)
+        self.quitButton.place(x=430, y=640)  # .place sert à placer le label
 
     # ==================================================
     # AUTRES FONCTIONS DE LA CLASSE ::::::::
